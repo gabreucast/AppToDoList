@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título da aplicação -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleTextView"
+        style="@style/TitleText"
+        android:paddingBottom="16dp"
+        android:text="@string/title"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main" />
+
+    <!-- Ícone da aplicação -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="35dp"
+        android:src="@drawable/baseline_list_alt_24"
+        app:layout_constraintEnd_toStartOf="@+id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo para adicionar uma nova tarefa -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/addtaskTextView"
+        style="@style/AddTaskEditText"
+        android:hint="@string/addEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconImageView" />
+
+    <!-- Botão para adicionar uma tarefa -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addButton"
+        style="@style/AddButton"
+        android:text="@string/addButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtaskTextView" />
+
+    <!-- Título para a lista de tarefas -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView"
+        style="@style/TaskText"
+        android:layout_marginTop="10dp"
+        android:text="@string/createdTasks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addButton"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <!-- Lista de tarefas -->
+    <ListView
+        android:id="@+id/taskListView"
+        android:layout_width="373dp"
+        android:layout_height="379dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:divider="@color/divider_color"
+        android:dividerHeight="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <!-- Botão para editar a tarefa -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/editButton"
+        style="@style/EditButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/editButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskListView" />
+
+    <!-- Botão para excluir a tarefa -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/deleteButton"
+        style="@style/DeleteButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/deleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskListView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

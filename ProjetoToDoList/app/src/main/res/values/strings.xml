@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Título da aplicação -->
+    <string name="app_name">Lista de Tarefas</string>
+
+    <!-- Título da lista de tarefas -->
+    <string name="title">To Do List</string>
+
+    <!-- Texto de dica para o campo de adicionar nova tarefa -->
+    <string name="addEditText">Adicione Nova Tarefa</string>
+
+    <!-- Texto do botão para adicionar tarefa -->
+    <string name="addButton">Criar Tarefa</string>
+
+    <!-- Título para a lista de tarefas criadas -->
+    <string name="createdTasks">Tarefas Criadas</string>
+
+    <!-- Texto do botão para editar tarefa -->
+    <string name="editButton">Editar Tarefa</string>
+
+    <!-- Texto do botão para excluir tarefa -->
+    <string name="deleteButton">Excluir Tarefa</string>
+</resources>
