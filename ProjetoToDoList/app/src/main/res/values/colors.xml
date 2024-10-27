@@ -4,13 +4,16 @@
     <color name="background">#E8F5E9</color>
 
     <!-- Cor para o título da aplicação e título da lista de tarefas -->
-    <color name="title_text_color">#263238</color>
+    <color name="titleColor">#F4ACC6</color>
 
-    <!-- Cor do texto do campo de adicionar tarefa -->
-    <color name="edit_text_color">#1976D2</color>
+    <!-- Cor para a letra da aplicação e título da lista de tarefas -->
+    <color name="letraColor">#263238</color>
 
     <!-- Cor do botão de adicionar tarefa -->
     <color name="orange">#FF5722</color>
+
+    <!-- Cor do botão de adicionar tarefa -->
+    <color name="orangebutton">#ED3F08</color>
 
     <!-- Cor de fundo do botão de editar tarefa -->
     <color name="blue">#1976D2</color>

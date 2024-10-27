@@ -7,15 +7,23 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="15dp">
+
+    <!-- Fundo do  Titulo e Imagem principal -->
+    <View
+        android:id="@+id/blueBackground"
+        style="@style/ViewBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Título da aplicação -->
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleTextView"
         style="@style/TitleText"
+        android:layout_marginStart="50dp"
         android:paddingBottom="16dp"
         android:text="@string/title"
-        android:layout_marginStart="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/main" />
@@ -23,11 +31,9 @@
     <!-- Ícone da aplicação -->
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iconImageView"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:scaleType="fitCenter"
+        style="@style/ImageTitulo"
         android:layout_marginStart="35dp"
-        android:src="@drawable/baseline_list_alt_24"
+        android:src="@drawable/title_icone"
         app:layout_constraintEnd_toStartOf="@+id/titleTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,6 +52,7 @@
         android:id="@+id/addButton"
         style="@style/AddButton"
         android:text="@string/addButton"
+        android:drawableStart="@drawable/add_icone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addtaskTextView" />
@@ -64,8 +71,8 @@
     <!-- Lista de tarefas -->
     <ListView
         android:id="@+id/taskListView"
-        android:layout_width="373dp"
-        android:layout_height="379dp"
+        android:layout_width="369dp"
+        android:layout_height="356dp"
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:divider="@color/divider_color"
@@ -79,7 +86,9 @@
         android:id="@+id/editButton"
         style="@style/EditButton"
         android:layout_marginTop="10dp"
+        android:drawablePadding="8dp"
         android:text="@string/editButton"
+        android:drawableStart="@drawable/edit_icone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskListView" />
 
@@ -90,6 +99,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
         android:text="@string/deleteButton"
+        android:drawableStart="@drawable/remove_icone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskListView" />
 

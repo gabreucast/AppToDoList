@@ -7,17 +7,17 @@
     <string name="title">To Do List</string>
 
     <!-- Texto de dica para o campo de adicionar nova tarefa -->
-    <string name="addEditText">Adicione Nova Tarefa</string>
+    <string name="addEditText">Nova Tarefa</string>
 
     <!-- Texto do botão para adicionar tarefa -->
-    <string name="addButton">Criar Tarefa</string>
+    <string name="addButton">Adicionar Tarefa</string>
 
     <!-- Título para a lista de tarefas criadas -->
     <string name="createdTasks">Tarefas Criadas</string>
 
     <!-- Texto do botão para editar tarefa -->
-    <string name="editButton">Editar Tarefa</string>
+    <string name="editButton">Editar</string>
 
     <!-- Texto do botão para excluir tarefa -->
-    <string name="deleteButton">Excluir Tarefa</string>
+    <string name="deleteButton">Excluir</string>
 </resources>
