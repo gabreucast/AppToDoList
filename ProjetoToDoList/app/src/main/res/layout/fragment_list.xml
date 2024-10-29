@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- CheckBox para marcar a tarefa como completa -->
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:color="@color/divider_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Texto da tarefa -->
+    <TextView
+        android:id="@+id/taskTextView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:text="Task Title"
+        android:textColor="@color/letraColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editButton"
+        app:layout_constraintStart_toEndOf="@id/checkBox1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botão para editar a tarefa -->
+    <ImageButton
+        android:id="@+id/editButton"
+        android:layout_width="74dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="editar"
+        android:src="@drawable/edit_icone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/deleteButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botão para excluir a tarefa -->
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="74dp"
+        android:layout_height="53dp"
+        android:contentDescription="remover"
+        android:src="@drawable/remove_icone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Linha divisória -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/divider_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deleteButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

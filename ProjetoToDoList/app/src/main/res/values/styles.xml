@@ -5,7 +5,7 @@
     <style name="ViewBackground">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">74dp</item>
-        <item name="android:background">@color/orange</item>
+        <item name="android:background">@color/fundoBarra</item>
     </style>
 
     <!-- Estilo para o título -->
@@ -37,7 +37,7 @@
 
     <!-- Estilo para o botão de criar tarefa -->
     <style name="AddButton">
-        <item name="android:backgroundTint">@color/orangebutton</item>
+        <item name="android:backgroundTint">@color/addButton</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">15sp</item>
         <item name="android:textStyle">bold</item>
@@ -54,16 +54,11 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <!-- Estilo para o botão de Editar Tarefa -->
-    <style name="EditButton">
-        <item name="android:backgroundTint">@color/blue</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:padding">15dp</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:layout_width">160dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_height">wrap_content</item>
+    <!-- Estilo para linha-->
+    <style name="Viewlinha">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/divider_color</item>
     </style>
 
     <!-- Estilo para o ícone do botao de Editar Tarefa -->
@@ -73,16 +68,5 @@
         <item name="android:scaleType">fitCenter</item>
     </style>
 
-    <!-- Estilo para o botão de Excluir Tarefa -->
-    <style name="DeleteButton">
-        <item name="android:backgroundTint">@color/red</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:padding">15dp</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:layout_width">160dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
 
 </resources>

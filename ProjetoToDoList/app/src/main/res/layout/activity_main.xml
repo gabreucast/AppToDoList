@@ -14,5 +14,4 @@
         android:name="com.gabreucast.projetotodolist.Fragmets.home_toDoList"
         tools:layout="@layout/fragment_home_to_do_list"/>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>

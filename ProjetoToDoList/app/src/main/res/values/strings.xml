@@ -20,4 +20,8 @@
 
     <!-- Texto do botão para excluir tarefa -->
     <string name="deleteButton">Excluir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="saveButton">Salvar</string>
+    <string name="editTask">Editar Tarefa</string>
 </resources>

@@ -40,7 +40,7 @@
 
     <!-- Campo para adicionar uma nova tarefa -->
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/addtaskTextView"
+        android:id="@+id/addtaskEditText"
         style="@style/AddTaskEditText"
         android:hint="@string/addEditText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +55,7 @@
         android:drawableStart="@drawable/add_icone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addtaskTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/addtaskEditText" />
 
     <!-- Título para a lista de tarefas -->
     <androidx.appcompat.widget.AppCompatTextView
@@ -68,39 +68,25 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
 
+    <!-- Linha divisória -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@color/letraColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_marginTop="8dp"/>
+
     <!-- Lista de tarefas -->
-    <ListView
-        android:id="@+id/taskListView"
-        android:layout_width="369dp"
-        android:layout_height="356dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
         android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:divider="@color/divider_color"
-        android:dividerHeight="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <!-- Botão para editar a tarefa -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/editButton"
-        style="@style/EditButton"
-        android:layout_marginTop="10dp"
-        android:drawablePadding="8dp"
-        android:text="@string/editButton"
-        android:drawableStart="@drawable/edit_icone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taskListView" />
-
-    <!-- Botão para excluir a tarefa -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/deleteButton"
-        style="@style/DeleteButton"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/deleteButton"
-        android:drawableStart="@drawable/remove_icone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/taskListView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:listitem="@layout/fragment_list" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

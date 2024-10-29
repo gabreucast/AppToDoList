@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Cor de fundo principal da aplicação -->
-    <color name="background">#E8F5E9</color>
+    <color name="background">#D9E1F3</color>
 
     <!-- Cor para o título da aplicação e título da lista de tarefas -->
-    <color name="titleColor">#F4ACC6</color>
+    <color name="titleColor">#24EDA0</color>
 
-    <!-- Cor para a letra da aplicação e título da lista de tarefas -->
-    <color name="letraColor">#263238</color>
+    <!-- Cor para todas letras e editText -->
+    <color name="letraColor">#000000</color>
+
+    <!-- Cor de fundo barra To Do List -->
+    <color name="fundoBarra">#0955ED</color>
 
     <!-- Cor do botão de adicionar tarefa -->
-    <color name="orange">#FF5722</color>
-
-    <!-- Cor do botão de adicionar tarefa -->
-    <color name="orangebutton">#ED3F08</color>
-
-    <!-- Cor de fundo do botão de editar tarefa -->
-    <color name="blue">#1976D2</color>
-
-    <!-- Cor de fundo do botão de excluir tarefa -->
-    <color name="red">#D32F2F</color>
-
-    <!-- Cor do texto dos botões (todos) -->
-    <color name="branco">#FFFFFF</color>
+    <color name="addButton">#C12E04</color>
 
     <!-- Cor do divisor da lista de tarefas -->
-    <color name="divider_color">@android:color/darker_gray</color>
+    <color name="divider_color">#AAAAAAFF</color>
 </resources>
